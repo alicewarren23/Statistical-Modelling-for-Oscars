@@ -1,0 +1,313 @@
+>drop1(full_model,test = "LRT")
+
+>fit1 <-update(full_model, .~. - Anf)
+>drop1(fit1, test = "LRT")
+>fit2 <-update(fit1, .~. - Aml)
+>drop1(fit2, test = "LRT")
+>fit3 <-update(fit2, .~. - Western)
+>drop1(fit3, test = "LRT")
+>fit4 <-update(fit3, .~. - Nom)
+>drop1(fit4, test = "LRT")
+>fit5 <-update(fit4, .~. - Animation)
+>drop1(fit5, test = "LRT")
+>fit6 <-update(fit5, .~. - Gmc)
+>drop1(fit6, test = "LRT")
+>fit7 <-update(fit6, .~. - Docu)
+>drop1(fit7, test = "LRT")
+>fit8 <-update(fit7, .~. - Length)
+>drop1(fit8, test = "LRT")
+>fit9 <-update(fit8, .~. - Son)
+>drop1(fit9, test = "LRT")
+>fit10 <-update(fit9, .~. - NBR)
+>drop1(fit10, test = "LRT")
+?fit11 <-update(fit10, .~. - NYFCC)
+>drop1(fit11, test = "LRT")
+>fit12 <-update(fit11, .~. - Adventure)
+>drop1(fit12, test = "LRT")
+>fit13 <-update(fit12, .~. - For)
+>drop1(fit13, test = "LRT")
+>fit14 <-update(fit13, .~. - Gm2)
+>drop1(fit15, test = "LRT")
+>fit15 <-update(fit14, .~. - Sport)
+>drop1(fit14, tes = "LRT")
+>fit16 <-update(fit15, .~. - Afs)
+>drop1(fit16, test = "LRT")
+>fit17 <-update(fit16, .~. - Horror)
+>drop1(fit17, test = "LRT")
+>fit18 <-update(fit17, .~. - U)
+>drop1(fit18, test = "LRT")
+>fit19 <-update(fit18, .~. - Cin)
+>drop1(fit19, test = "LRT")
+>fit20 <-update(fit19, .~. - Art)
+>drop1(fit20, test = "LRT")
+>fit21 <-update(fit20, .~. - Comedy)
+>drop1(fit21, test = "LRT")
+>fit22 <-update(fit21, .~. - Eff)
+>drop1(fit22, test = "LRT")
+>fit23 <-update(fit22, .~. - Film.noir)
+>drop1(fit23, test = "LRT")
+>fit24 <-update(fit23, .~. - Ebert)
+>drop1(fit24, test = "LRT")
+>fit25 <-update(fit24, .~. - History)
+>drop1(fit25, test = "LRT")
+>fit26 <-update(fit25, .~. - Music)
+>drop1(fit26, test = "LRT")
+>fit27 <-update(fit26, .~. - Biography)
+>drop1(fit27, test = "LRT")
+>fit28 <-update(fit27, .~. - Gf2)
+>drop1(fit28, test = "LRT")
+>fit29 <-update(fit28, .~. - Afl)
+>drop1(fit29, test = "LRT")
+>fit30 <-update(fit29, .~. - Scr)
+>drop1(fit30, test = "LRT")
+>fit31 <-update(fit30, .~. - Sco)
+>drop1(fit31, test = "LRT")
+>fit32 <-update(fit31, .~. - Mystery)
+>drop1(fit32, test = "LRT")
+>fit33 <-update(fit32, .~. - Musical)
+>drop1(fit33, test = "LRT")
+>fit34 <-update(fit33, .~. - Cos)
+>drop1(fit34, test = "LRT")
+>fit35 <-update(fit34, .~. - Thriller)
+>drop1(fit35, test = "LRT")
+>fit36 <-update(fit35, .~. - LAFCA)
+>drop1(fit36, test = "LRT")
+>fit37 <-update(fit36, .~. - Gm1)
+>drop1(fit37, test = "LRT")
+>fit38 <-update(fit37, .~. - G)
+>drop1(fit38, test = "LRT")
+>fit39 <-update(fit38, .~. - Sou)
+>drop1(fit39, test = "LRT")
+>fit40 <-update(fit39, .~. - Crime)
+>drop1(fit40, test = "LRT")
+>fit41 <-update(fit40, .~. - AD)
+>drop1(fit41, test = "LRT")
+>fit42 <-update(fit41, .~. - Family)
+>drop1(fit42, test = "LRT")
+>fit43 <-update(fit42, .~. - Fantasy)
+>drop1(fit43, test = "LRT")
+>fit44 <-update(fit43, .~. - War)
+>drop1(fit44, test = "LRT")
+>fit45 <-update(fit44, .~. - Drama)
+>drop1(fit45, test = "LRT")
+>fit46 <-update(fit45, .~. - Action)
+>drop1(fit46, test = "LRT")
+>fit47 <-update(fit46, .~. - Mak)
+>drop1(fit47, test = "LRT")
+>fit48 <-update(fit47, .~. - Ams)
+>drop1(fit48, test = "LRT")
+>fit49 <-update(fit48, .~. - Romance)
+>drop1(fit49, test = "LRT")
+>fit50 <-update(fit49, .~. - WR)
+>drop1(fit50, test = "LRT")
+>fit51 <-update(fit50, .~. - PG13)
+>drop1(fit51, test = "LRT")
+>fit52 <-update(fit51, .~. - PG)
+>drop1(fit52, test = "LRT")
+>fit53 <-update(fit52, .~. - R)
+>drop1(fit53, test = "LRT")
+>fit54 <-update(fit53, .~. - DGA)
+>drop1(fit54, test = "LRT")
+>fit55 <-update(fit54, .~. - Gd)
+>drop1(fit55, test = "LRT")
+>fit56 <-update(fit55, .~. - NSFC)
+>drop1(fit56, test = "LRT")
+
+> AIC(fit47, fit48, fit49, fit50, fit51, fit52, fit53, fit54, fit55, fit56)
+
+      df      AIC
+fit47 17 314.3500
+fit48 16 313.9184
+fit49 15 314.1598
+fit50 14 314.8799
+fit51 13 315.2683
+fit52 12 315.2178
+fit53 11 316.0977
+fit54 10 317.9327
+fit55  9 317.8266
+fit56  8 318.9511
+
+> summary(fit48)
+
+Call:
+glm(formula = Ch ~ Dir + Edi + Dan + Gdr + Gd + PGA + DGA + Romance + 
+    SciFi + Days + PG + PG13 + R + NSFC + WR, family = binomial, 
+    data = oscars)
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -9.428192   2.462220  -3.829 0.000129 ***
+Dir          1.574330   0.494778   3.182 0.001463 ** 
+Edi          1.169340   0.373104   3.134 0.001724 ** 
+Dan          3.131095   1.300739   2.407 0.016077 *  
+Gdr          1.170446   0.393905   2.971 0.002965 ** 
+Gd          -2.476237   1.353463  -1.830 0.067316 .  
+PGA          3.320186   0.408168   8.134 4.14e-16 ***
+DGA          1.733160   0.996429   1.739 0.081969 .  
+Romance      0.545207   0.363354   1.500 0.133490    
+SciFi       -2.375553   1.384500  -1.716 0.086195 .  
+Days         0.002247   0.001310   1.715 0.086365 .  
+PG          -0.865544   0.546307  -1.584 0.113113    
+PG13        -0.980035   0.580730  -1.688 0.091489 .  
+R           -1.041853   0.446238  -2.335 0.019557 *  
+NSFC         1.348854   0.523822   2.575 0.010023 *  
+WR           0.590864   0.320739   1.842 0.065447 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 528.99  on 603  degrees of freedom
+Residual deviance: 281.92  on 588  degrees of freedom
+AIC: 313.92
+
+Number of Fisher Scoring iterations: 6
+
+> step_bic <- step(full_model, direction = "both", k = log(nrow(oscars)))
+> summary(step_bic)
+Call:
+glm(formula = Ch ~ Dir + Edi + PGA, family = binomial, data = oscars)
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -4.6961     0.4999  -9.394  < 2e-16 ***
+Dir           1.9363     0.4712   4.109 3.97e-05 ***
+Edi           1.1918     0.3303   3.608 0.000309 ***
+PGA           3.1721     0.3320   9.554  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 528.99  on 603  degrees of freedom
+Residual deviance: 324.47  on 600  degrees of freedom
+AIC: 332.47
+
+Number of Fisher Scoring iterations: 6
+
+> step_aic <- step(full_model, direction = "both", k = 2)
+> summary(step_aic)
+
+Call:
+glm(formula = Ch ~ Dir + Edi + Dan + Gdr + Gd + PGA + DGA + Romance + 
+    SciFi + Days + PG + PG13 + R + NSFC + WR, family = binomial, 
+    data = oscars)
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -9.428192   2.462220  -3.829 0.000129 ***
+Dir          1.574330   0.494778   3.182 0.001463 ** 
+Edi          1.169340   0.373104   3.134 0.001724 ** 
+Dan          3.131095   1.300739   2.407 0.016077 *  
+Gdr          1.170446   0.393905   2.971 0.002965 ** 
+Gd          -2.476237   1.353463  -1.830 0.067316 .  
+PGA          3.320186   0.408168   8.134 4.14e-16 ***
+DGA          1.733160   0.996429   1.739 0.081969 .  
+Romance      0.545207   0.363354   1.500 0.133490    
+SciFi       -2.375553   1.384500  -1.716 0.086195 .  
+Days         0.002247   0.001310   1.715 0.086365 .  
+PG          -0.865544   0.546307  -1.584 0.113113    
+PG13        -0.980035   0.580730  -1.688 0.091489 .  
+R           -1.041853   0.446238  -2.335 0.019557 *  
+NSFC         1.348854   0.523822   2.575 0.010023 *  
+WR           0.590864   0.320739   1.842 0.065447 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 528.99  on 603  degrees of freedom
+Residual deviance: 281.92  on 588  degrees of freedom
+AIC: 313.92
+
+Number of Fisher Scoring iterations: 6
+
+> anova(step_aic, full_model, test = "LRT")
+Analysis of Deviance Table
+
+Model 1: Ch ~ Dir + Edi + Dan + Gdr + Gd + PGA + DGA + Romance + SciFi + 
+    Days + PG + PG13 + R + NSFC + WR
+Model 2: Ch ~ Nom + Dir + Aml + Afl + Ams + Afs + Scr + Cin + Art + Cos + 
+    Sco + Son + Edi + Sou + For + Anf + Eff + Mak + Dan + AD + 
+    Gdr + Gmc + Gd + Gm1 + Gm2 + Gf1 + Gf2 + PGA + DGA + Action + 
+    Adventure + Animation + Biography + Comedy + Crime + Docu + 
+    Drama + Family + Fantasy + Film.noir + History + Horror + 
+    Music + Musical + Mystery + Romance + SciFi + Sport + Thriller + 
+    War + Western + Length + Days + G + PG + PG13 + R + U + Ebert + 
+    NYFCC + LAFCA + NSFC + NBR + WR
+  Resid. Df Resid. Dev Df Deviance Pr(>Chi)
+1       588     281.92                     
+2       539     258.01 49    23.91    0.999
+
+
+> anova(step_bic, full_model, test = "LRT")
+Analysis of Deviance Table
+
+Model 1: Ch ~ Dir + Edi + PGA
+Model 2: Ch ~ Nom + Dir + Aml + Afl + Ams + Afs + Scr + Cin + Art + Cos + 
+    Sco + Son + Edi + Sou + For + Anf + Eff + Mak + Dan + AD + 
+    Gdr + Gmc + Gd + Gm1 + Gm2 + Gf1 + Gf2 + PGA + DGA + Action + 
+    Adventure + Animation + Biography + Comedy + Crime + Docu + 
+    Drama + Family + Fantasy + Film.noir + History + Horror + 
+    Music + Musical + Mystery + Romance + SciFi + Sport + Thriller + 
+    War + Western + Length + Days + G + PG + PG13 + R + U + Ebert + 
+    NYFCC + LAFCA + NSFC + NBR + WR
+  Resid. Df Resid. Dev Df Deviance Pr(>Chi)
+1       600     324.47                     
+2       539     258.01 61    66.46   0.2945
+
+> anova(step_bic, step_aic, test = "LRT")
+Analysis of Deviance Table
+
+Model 1: Ch ~ Dir + Edi + PGA
+Model 2: Ch ~ Dir + Edi + Dan + Gdr + Gd + PGA + DGA + Romance + SciFi + 
+    Days + PG + PG13 + R + NSFC + WR
+  Resid. Df Resid. Dev Df Deviance  Pr(>Chi)    
+1       600     324.47                          
+2       588     281.92 12    42.55 2.691e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1> anova(step_aic, full_model, test = "LRT")
+Analysis of Deviance Table
+
+Model 1: Ch ~ Dir + Edi + Dan + Gdr + Gd + PGA + DGA + Romance + SciFi + 
+    Days + PG + PG13 + R + NSFC + WR
+Model 2: Ch ~ Nom + Dir + Aml + Afl + Ams + Afs + Scr + Cin + Art + Cos + 
+    Sco + Son + Edi + Sou + For + Anf + Eff + Mak + Dan + AD + 
+    Gdr + Gmc + Gd + Gm1 + Gm2 + Gf1 + Gf2 + PGA + DGA + Action + 
+    Adventure + Animation + Biography + Comedy + Crime + Docu + 
+    Drama + Family + Fantasy + Film.noir + History + Horror + 
+    Music + Musical + Mystery + Romance + SciFi + Sport + Thriller + 
+    War + Western + Length + Days + G + PG + PG13 + R + U + Ebert + 
+    NYFCC + LAFCA + NSFC + NBR + WR
+  Resid. Df Resid. Dev Df Deviance Pr(>Chi)
+1       588     281.92                     
+2       539     258.01 49    23.91    0.999
+
+
+> anova(step_bic, full_model, test = "LRT")
+Analysis of Deviance Table
+
+Model 1: Ch ~ Dir + Edi + PGA
+Model 2: Ch ~ Nom + Dir + Aml + Afl + Ams + Afs + Scr + Cin + Art + Cos + 
+    Sco + Son + Edi + Sou + For + Anf + Eff + Mak + Dan + AD + 
+    Gdr + Gmc + Gd + Gm1 + Gm2 + Gf1 + Gf2 + PGA + DGA + Action + 
+    Adventure + Animation + Biography + Comedy + Crime + Docu + 
+    Drama + Family + Fantasy + Film.noir + History + Horror + 
+    Music + Musical + Mystery + Romance + SciFi + Sport + Thriller + 
+    War + Western + Length + Days + G + PG + PG13 + R + U + Ebert + 
+    NYFCC + LAFCA + NSFC + NBR + WR
+  Resid. Df Resid. Dev Df Deviance Pr(>Chi)
+1       600     324.47                     
+2       539     258.01 61    66.46   0.2945
+
+> anova(step_bic, step_aic, test = "LRT")
+Analysis of Deviance Table
+
+Model 1: Ch ~ Dir + Edi + PGA
+Model 2: Ch ~ Dir + Edi + Dan + Gdr + Gd + PGA + DGA + Romance + SciFi + 
+    Days + PG + PG13 + R + NSFC + WR
+  Resid. Df Resid. Dev Df Deviance  Pr(>Chi)    
+1       600     324.47                          
+2       588     281.92 12    42.55 2.691e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

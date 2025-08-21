@@ -311,3 +311,15 @@ Model 2: Ch ~ Dir + Edi + Dan + Gdr + Gd + PGA + DGA + Romance + SciFi +
 2       588     281.92 12    42.55 2.691e-05 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+> BIC(full_model, step_aic, step_bic)
+           df      BIC
+full_model 65 674.2406
+step_aic   16 384.3756
+step_bic    4 350.0823
+
+> AIC(full_model, step_aic, step_bic)
+           df      AIC
+full_model 65 388.0083
+step_aic   16 313.9184
+step_bic    4 332.4680

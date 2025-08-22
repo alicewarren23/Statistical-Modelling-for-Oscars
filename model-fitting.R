@@ -81,4 +81,12 @@ Residual deviance: 258.01  on 539  degrees of freedom
 AIC: 388.01
 Number of Fisher Scoring iterations: 16 new R script
 
-# Start coding here
+> exp(coef(full_model)["PGA"])
+
+PGA 
+35.53586
+
+> exp(confint(full_model, parm = "PGA")
+
+   2.5 %   97.5 % 
+13.99565 100.27270
